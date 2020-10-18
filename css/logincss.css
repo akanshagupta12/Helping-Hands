@@ -22,6 +22,16 @@ body{
     flex-direction: row;
     overflow: hidden;
 }
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    border-bottom: 2px solid;
+    border-bottom-color: darkblue;
+    display: inline-block;
+}
 input{
     outline: none;
     border:none;
@@ -34,7 +44,6 @@ input{
     border:none;
     padding:12px;
     background-color: lightgray;
-    
 }
 i{
     margin-right:10px;
@@ -44,7 +53,7 @@ input[type='submit']{
     padding:7px;
     outline: none;
     border:none;
-    background-color:rgb(16, 196, 16);
+    background:linear-gradient(to right, skyblue, darkblue);
     color:white;
     margin-top: 20px;
     margin-left:20%;
@@ -83,16 +92,18 @@ input[type='submit']:hover{
     animation-iteration-count: infinite;
     }
     #img1{
-        background-color: peru;
+     
+        background:linear-gradient(to right,pink,red);
     }
     #img2{
-        background-color: plum;
-    }
+        background:linear-gradient(to right,rgb(192, 112, 192),rgb(199, 3, 199));
+    }  
     #img3{
-        background-color: peachpuff;
+        background:linear-gradient(to right,skyblue,darkblue);
     }
     #img4{
-        background-color:skyblue;
+        
+        background:linear-gradient(to right,lightgray,gray);
     }
     .slider p{
         text-align: left;
@@ -214,18 +225,6 @@ left:-2400px;
         animation-name: card;
         animation-iteration-count: infinite;
         }
-        #img1{
-            background-color: peru;
-        }
-        #img2{
-            background-color: plum;
-        }
-        #img3{
-            background-color: peachpuff;
-        }
-        #img4{
-            background-color:skyblue;
-        }
         .slider p{
             text-align: left;
             font-family: monospace;
@@ -339,19 +338,6 @@ input[type='submit']:hover{
     animation-name: card;
     animation-iteration-count: infinite;
     }
-    #img1{
-        background-color: peru;
-    }
-    #img2{
-        background-color: plum;
-    }
-    #img3{
-        background-color: peachpuff;
-    }
-    #img4{
-        background-color:skyblue;
-    }
-    
     .slider p{
         margin-left:8px;
         font-size:18px;
@@ -396,8 +382,8 @@ left:-2400px;
     width:100%;
 }
 .form{
-    height: 430px;
-    width:60%;
+    height: 450px;
+    width:70%;
     background-color: white;
     color:black;
     padding:30px;
