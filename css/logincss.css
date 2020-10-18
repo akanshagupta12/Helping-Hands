@@ -44,8 +44,8 @@ input[type='submit']{
     padding:7px;
     outline: none;
     border:none;
-    background-color:rgb(16, 196, 16);
-    color:white;
+    background-color: unset;
+    color:darkgreen;
     margin-top: 20px;
     margin-left:20%;
     border-radius:20px;
@@ -53,6 +53,23 @@ input[type='submit']{
     font-size:20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+.form span{
+    animation: submit 2s linear infinite;
+    height:2px;
+    left: -100%;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    position: absolute;
+    width:100%;
+}
+@keyframes submit{
+    0%{
+        left:-100%;
+    }
+    50%,100%{
+        left:100%;
+    }
+
 }
 p{
     margin:30px;
@@ -73,7 +90,7 @@ input[type='submit']:hover{
     margin-right:6%;
 }
 .slider{
-    top:95px;
+    top:105px;
     width:2400px;
     position: relative;
     display: flex;
@@ -81,9 +98,6 @@ input[type='submit']:hover{
     animation-duration: 20s;
     animation-name: card;
     animation-iteration-count: infinite;
-    }
-    .slider igmg{
-        height:343px;
     }
     #img1{
         background-color: peru;
